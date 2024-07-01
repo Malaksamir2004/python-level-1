@@ -1,0 +1,3 @@
+country=input('enter your country')
+ecountry=country.upper()
+print('your country is',ecountry,'the word length is',len(ecountry))
