@@ -1,0 +1,65 @@
+print('''                   coffino shop
+                           _______________
+        coffee                               Non_coffee
+        _____                                ___________
+        1.Espresso     5$                    1.Hot chocolate   5$
+        2.Latte        7$                    2.Milkshake       9$
+        3.Americano    7.5$                  3.smoothie        4$
+                                             4.lemonade        2$
+                                             5.water           1.5$
+                                                                     ''')
+item=int(input('select item with coffe by entering 1 or non_coffee by entering 2'))
+if item==1:
+    coffe=int(input('please enter your coffe number from 1 to 3'))
+    if coffe==1:
+        quantity=int(input('which quantity do you prefer'))
+        drink='Espresso'
+        price=5
+        total_price=price*quantity
+    elif coffe==2:
+        quantity=int(input('which quantity do you prefer'))
+        drink='Late'
+        price=7
+        total_price=price*quantity
+    elif coffe==3:
+        quantity=int(input('which quantity do you prefer'))
+        drink='Late'
+        price=7.5
+        total_price=price*quantity
+elif item == 2:
+    Non_coffe = int(input('please enter your Non_coffe number from 1 to 5'))
+    if Non_coffe == 1:
+        quantity = int(input('which quantity do you prefer'))
+        drink = 'Hot chocolate'
+        price = 5
+        total_price = price * quantity
+    elif Non_coffe == 2:
+        quantity = int(input('which quantity do you prefer'))
+        drink = 'Milkshake'
+        price = 9
+        total_price = price * quantity
+    elif Non_coffe == 3:
+        quantity = int(input('which quantity do you prefer'))
+        drink = 'smoothie'
+        price = 4
+        total_price = price * quantity
+    elif Non_coffe == 4:
+        quantity = int(input('which quantity do you prefer'))
+        drink = 'lemonade'
+        price = 2
+        total_price = price * quantity
+    elif Non_coffe == 5:
+        quantity = int(input('which quantity do you prefer'))
+        drink = 'water'
+        price = 1.5
+        total_price = price * quantity
+else:
+    print('invalid number please enter 1 for coffee items or 2 for Non_coffee items')
+print(f'''         
+                   ________________________________
+                    thank you for choosing coffino  
+                   ________________________________
+          your order:\n
+          quantity\tdrink\tprice\ttotal price
+             {quantity}\t{drink}\t{price}$\t{total_price}$\n
+                          see you soon :)''')
