@@ -1,0 +1,15 @@
+x=int(input('enter your Degree'))
+if x>=50:
+    print('congrats you passed the course')
+    if x>=90:
+        print('your grade is A')
+    elif x>=80:
+        print('your grade is B')
+    elif x >= 70:
+        print('your grade is C')
+    elif x >= 60:
+        print('your grade is D')
+    elif x >= 50:
+        print('your grade is E')
+else:
+    print('sadly you failed this course \nyour grade if F')
