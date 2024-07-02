@@ -1,0 +1,24 @@
+print('''                           the lavender candle  
+                                   get your candle for 270$
+                            if you bought products for more than 1000$
+                                   you get a 10% discount!!
+                               hurry up and get your discount NOW!                        
+                                                                                                    ''')
+
+quantity=int(input('enter the quantity'))
+unit_price=270
+total_value=unit_price*quantity
+if total_value>=1000:
+    discount=total_value*0.1
+else:
+    discount=0
+Net_value=total_value-discount
+print(f'''
+                            thank you for choosing the lavender candle
+     you ordered {quantity} candles
+     price per each = {unit_price}$
+     total price = {total_value}$
+     discount = {discount}$
+     Net value = {Net_value}
+                                 have a Nice day :)
+                                                                                                  ''')
