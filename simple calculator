@@ -1,0 +1,17 @@
+x=int(input('enter your first number'))
+y=int(input('enter your second number'))
+o=input('enter your operation sign (+,-,*,/)')
+if o=='+':
+    z=x+y
+    print(x, o, y, '=', z)
+elif o=='-':
+    z=x-y
+    print(x, o, y, '=', z)
+elif o=='*':
+    z=x*y
+    print(x, o, y, '=', z)
+elif o=='/':
+    z=x/y
+    print(x, o, y, '=', z)
+else:
+    print('invalid operator please enter a valid one')
