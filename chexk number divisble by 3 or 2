@@ -1,0 +1,7 @@
+x=int(input('enter your Degree'))
+if x%3==0:
+    print('your number is divisble by 3')
+elif x%2==0:
+    print('your number is divisble by 2')
+else:
+    print('your number neither divisble by 3 nor 2')
