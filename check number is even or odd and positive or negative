@@ -1,0 +1,9 @@
+x=int(input('enter your Number'))
+if x%2==0:
+    print('your Number',x,'is an even number')
+else:
+    print('your Number',x,' is odd')
+if x>0:
+    print('your number',x,'is a positive number')
+else:
+    print('your number', x, 'is a negative number')
