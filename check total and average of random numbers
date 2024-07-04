@@ -1,0 +1,10 @@
+total=0
+number=0
+while True:
+    x=int(input('please enter your number to add in the average or 0 for exit'))
+    if x==0:
+        break
+    else:
+        number+=1
+        total+=x
+print('average = ',total,'/',number,'=',total/number)
