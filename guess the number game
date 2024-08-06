@@ -1,0 +1,12 @@
+import random
+x=random.randint(1,100)
+print(x)
+while True:
+    y = int(input('guess a number between 1 and 100'))
+    if y>x:
+        print('your guess is greater guess a smaller number')
+    elif x>y:
+        print('your guess is smaller guess a greater number')
+    else:
+        print('good job you guessed it right :) ')
+        break
