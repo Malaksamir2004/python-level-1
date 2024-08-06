@@ -1,0 +1,29 @@
+print('''                    ***welcome to your bank loan service***                          ''')
+amount=int(input('entre the amount of the loan'))
+years=int(input('enter the years of installment between 1 and 7 years'))
+if years >= 1 and years <=7:
+    if years==1:
+        interest= 0.1376
+    elif years==2:
+        interest=0.1375
+    elif years == 3:
+        interest = 0.1406
+    elif years == 4:
+        interest = 0.1445
+    elif years == 5:
+        interest = 0.1487
+    elif years == 6:
+        interest = 0.1529
+    elif years == 7:
+        interest = 0.1571
+else:
+    print('years unavalible please enter a number between 1 and 7')
+
+print(f'''         
+           your loan amount = {amount} 
+           interest rate for your amount in {years} years = {interest * 100} %
+           total interest = {amount*interest}
+           total loan amount = {(amount*interest)+amount}
+           paid in year = {((amount*interest)+amount)/years}
+           
+                      ***thank you for choosing us***                                              ''')
