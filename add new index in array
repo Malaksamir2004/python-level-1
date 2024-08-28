@@ -1,0 +1,5 @@
+import array
+x=array.array('i',[29,45,5,19,32])
+print(x)
+x.append(57)
+print(x)
