@@ -1,0 +1,15 @@
+x=int(input('enter first value'))
+y=int(input('enter second value'))
+z=int(input('enter third value'))
+def greatest(x,y,z):
+     if x>y and x>z:
+        return print(x,'is the greatest value')
+     elif y>x and y>z:
+        return print(y,'is the greatest value')
+     elif z>x and z>y:
+        return print(z,'is the greatest value')
+def average(x,y,z):
+    average=(x+y+z)/3
+    return print('average =',average)
+greatest(x,y,z)
+average(x,y,z)
