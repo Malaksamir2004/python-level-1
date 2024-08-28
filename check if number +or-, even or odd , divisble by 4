@@ -1,0 +1,19 @@
+x=int(input('enter first value'))
+def p_n(x):
+     if x>0:
+         return print(x,'is positive')
+     elif x<0:
+         return print(x,'is negative')
+def e_o(x):
+    if x%2== 0:
+        return print(x, 'is even')
+    else:
+        return print(x, 'is odd')
+def divisble_by_4(x):
+    if x%4==0:
+        return print(x, 'is divisble by 4')
+    else:
+        return print(x,'non divisble by 4')
+p_n(x)
+e_o(x)
+divisble_by_4(x)
